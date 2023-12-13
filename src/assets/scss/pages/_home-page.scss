@@ -1,2 +1,69 @@
-.home-page{
+.home-page {
+    padding-top: 50px;
+
+    input.search-location {
+        width: 300px;
+    }
+
+    .location-weather {
+        border: 1px solid $clr1;
+        padding: 50px;
+        margin-top: 30px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+
+            .curr-weather {
+                display: flex;
+
+                .location-name {
+                    font-family: Assistant-Bold;
+                }
+
+                .weather-icon {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+
+
+        .weather-title {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        .weekly-weather {
+            display: flex;
+            justify-content: space-between;
+
+            .daily-weather {
+                border: 1px solid $clr1;
+                height: 200px;
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .weather-icon {
+                    height: 50px;
+                    width: 50px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin: 0;
+                    font-family: Assistant-Bold;
+                }
+
+                span {}
+            }
+        }
+    }
 }
